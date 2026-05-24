@@ -16,8 +16,8 @@ Ciclo de Vida (MLflow): O rastreamento de experimentos, versionamento de hiperpa
 
 Conteinerização (Docker): A aplicação é totalmente isolada em um container estável, garantindo a mesma performance em ambiente local ou cloud deploy.
 
-📂 Estrutura do Repositório
-
+Estrutura do Repositório
+```
 predictive-maintenance-api/
 │
 ├── data/               # Diretório ignorado pelo Git (armazena os CSVs brutos)
@@ -31,30 +31,30 @@ predictive-maintenance-api/
 ├── Dockerfile          # Instruções de build da imagem Docker
 ├── README.md           # Documentação do projeto
 └── requirements.txt    # Dependências e bibliotecas do ecossistema
+```
 
-
-Como Executar Localmente (Setup Guide)
+🚀 Como Executar Localmente (Setup Guide)
 
 Opção A: Execução Nativa (Ambiente Virtual)
 
 1. Clone o repositório e acesse a pasta:
-
-git clone [https://github.com/enzolucato/predictive-maintenance-api.git](https://github.com/enzolucato/predictive-maintenance-api.git)
+```
+git clone https://github.com/enzolucato/predictive-maintenance-api.git
 cd predictive-maintenance-api
-
+```
 
 2. Crie a venv e instale as dependências:
-
+```
 python -m venv venv
 source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 
 3. Inicie a API e a UI do MLflow:
-
+```
 # Para rodar a API
 uvicorn src.main:app --reload
-
+```
 # Para visualizar os experimentos no MLflow (em outro terminal)
 mlflow ui
 
@@ -68,21 +68,21 @@ Opção B: Execução via Docker (Production Mode)
 Se você possui o Docker instalado, pode construir a imagem e rodar o container sem precisar instalar o Python localmente:
 
 1. Construa a imagem Docker:
-
+```
 docker build -t predictive-maintenance-api .
-
+```
 
 2. Execute o container mapeando as portas:
-
+```
 docker run -p 8000:8000 predictive-maintenance-api
-
+```
 
 A API estará pronta para receber requisições de produção na porta 8000.
 
-Uso da API (Endpoints)
+🔌 Uso da API (Endpoints)
 
 Exemplo de Requisição POST /predict:
-
+```
 {
   "Type": 0,
   "Air_temperature": 305.0,
@@ -91,11 +91,12 @@ Exemplo de Requisição POST /predict:
   "Torque": 75.0,
   "Tool_wear": 220
 }
-
+```
 
 Resposta Esperada:
-
+```
 {
   "status_maquina": "Risco de Falha Detectado!",
   "probabilidade_de_falha": "62.00%"
 }
+```
