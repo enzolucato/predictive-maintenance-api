@@ -1,0 +1,23 @@
+artifact_path: file:///c:/Users/Sidimar Lucato/Downloads/predictive-maintenance-api/notebooks/artefactos_mlflow/models/m-78877092344f418982fad1496b42c9ce/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-78877092344f418982fad1496b42c9ce
+model_size_bytes: 3232125
+model_uuid: m-78877092344f418982fad1496b42c9ce
+prompts: null
+run_id: 7b69fdeb174c4b318abb5cc0a986b47f
+utc_time_created: '2026-05-24 22:04:18.485971'
