@@ -1,0 +1,7 @@
+venv/
+.pytest_cache/
+.git/
+.gitignore
+__pycache__/
+mlruns/
+.DS_Store
