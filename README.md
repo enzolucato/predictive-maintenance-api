@@ -1,4 +1,4 @@
-Predictive Maintenance API
+##Predictive Maintenance API##
 
 Visão Geral do Projeto (Business Overview)
 
@@ -33,7 +33,7 @@ predictive-maintenance-api/
 └── requirements.txt    # Dependências e bibliotecas do ecossistema
 ```
 
-🚀 Como Executar Localmente (Setup Guide)
+Como Executar Localmente (Setup Guide)
 
 Opção A: Execução Nativa (Ambiente Virtual)
 
@@ -79,7 +79,7 @@ docker run -p 8000:8000 predictive-maintenance-api
 
 A API estará pronta para receber requisições de produção na porta 8000.
 
-🔌 Uso da API (Endpoints)
+Uso da API (Endpoints)
 
 Exemplo de Requisição POST /predict:
 ```
