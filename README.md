@@ -55,10 +55,12 @@ pip install -r requirements.txt
 # Para rodar a API
 uvicorn src.main:app --reload
 ```
-## Para visualizar os experimentos no MLflow (em outro terminal) ##
 ```
+# Para rodar o MLflow
 mlflow ui 
 ```
+## Para visualizar os experimentos no MLflow (em outro terminal) ##
+
 Acesse a API e o Swagger em: http://127.0.0.1:8000/docs
 
 Acesse o Dashboard do MLflow em: http://127.0.0.1:5000
