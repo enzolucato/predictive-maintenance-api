@@ -57,7 +57,8 @@ uvicorn src.main:app --reload
 ```
 ```
 # Para rodar o MLflow
-mlflow ui 
+cd notebooks
+mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
 ## Para visualizar os experimentos no MLflow (em outro terminal) ##
 
